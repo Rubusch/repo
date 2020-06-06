@@ -1,0 +1,22 @@
+<manifest>
+  <remote
+      name="poky"
+      fetch="https://git.yoctoproject.org/git" />
+
+  <remote
+      name="oe"
+      fetch="https://github.com/openembedded" />
+
+  <remote
+      name="altera"
+      fetch="https://github.com/kraj" />
+
+  <default
+      remote="poky"
+      revision="refs/heads/master"
+      sync-j="4" />
+
+  <project name="poky" path="poky" remote="poky" />
+  <project name="meta-openembedded" path="poky/meta-openembedded" remote="oe" />
+  <project name="meta-altera" path="poky/meta-altera" remote="altera" />
+</manifest>
