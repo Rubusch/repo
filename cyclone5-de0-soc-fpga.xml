@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-      remote="poky"
-      revision="refs/heads/master"
-      sync-j="4" />
-
+      sync-tags="true"
 -->
 <manifest>
   <remote
@@ -19,8 +16,7 @@
   <default
       remote="poky"
       revision="refs/heads/master"
-      sync-j="4"
-      sync-tags="true" />
+      sync-j="4" />
 
   <project
       name="poky"
@@ -37,6 +33,5 @@
   <project
       name="meta-altera"
       path="poky/meta-altera"
-      upstream="master"
       remote="altera" />
 </manifest>
