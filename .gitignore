@@ -1,0 +1,12 @@
+## backups
+*~
+\#*\#
+.\#*
+*.orig
+
+## intermediate
+*.o
+
+## executables
+*.exe
+
