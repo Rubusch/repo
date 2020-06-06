@@ -1,19 +1,22 @@
 <manifest>
   <remote
       name="poky"
+      revision="dunfell"
       fetch="https://git.yoctoproject.org/git" />
 
   <remote
       name="oe"
+      revision="dunfell"
       fetch="https://github.com/openembedded" />
 
   <remote
       name="altera"
+      revision="master"
       fetch="https://github.com/kraj" />
 
   <default
       remote="poky"
-      revision="refs/heads/master"
+      revision="dunfell"
       sync-j="4" />
 
   <project name="poky" path="poky" remote="poky" />
