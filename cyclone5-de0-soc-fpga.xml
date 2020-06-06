@@ -1,17 +1,14 @@
 <manifest>
   <remote
       name="poky"
-      revision="dunfell"
       fetch="https://git.yoctoproject.org/git" />
 
   <remote
       name="oe"
-      revision="dunfell"
       fetch="https://github.com/openembedded" />
 
   <remote
       name="altera"
-      revision="master"
       fetch="https://github.com/kraj" />
 
   <default
@@ -19,7 +16,7 @@
       revision="refs/heads/master"
       sync-j="4" />
 
-  <project name="poky" path="poky" dest-branch="dunfell" remote="poky" />
-  <project name="meta-openembedded" path="poky/meta-openembedded" dest-branch="dunfell" remote="oe" />
-  <project name="meta-altera" path="poky/meta-altera" dest-branch="master" remote="altera" />
+  <project name="poky" path="poky" revision="dunfell" remote="poky" />
+  <project name="meta-openembedded" path="poky/meta-openembedded" revision="dunfell" remote="oe" />
+  <project name="meta-altera" path="poky/meta-altera" revision="master" remote="altera" />
 </manifest>
