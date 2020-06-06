@@ -8,5 +8,5 @@
 	    revision="refs/heads/master"
 		sync-j="4" />
 
-	<project name="meta-openembedded" path="meta-openembedded" remote="origin" />
+	<project name="meta-openembedded" path=" meta-openembedded" remote="origin" />
 </manifest>
