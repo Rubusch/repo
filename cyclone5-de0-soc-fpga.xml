@@ -19,26 +19,24 @@
   <default
       remote="poky"
       revision="refs/heads/master"
-      sync-j="4" />
+      sync-j="4"
+      sync-tags="true" />
 
   <project
       name="poky"
       path="poky"
       revision="dunfell"
       upstream="dunfell"
-      dest-branch="dunfell"
       remote="poky" />
   <project
       name="meta-openembedded"
       path="poky/meta-openembedded"
       revision="dunfell"
       upstream="dunfell"
-      dest-branch="dunfell"
       remote="oe" />
   <project
       name="meta-altera"
       path="poky/meta-altera"
       upstream="master"
-      dest-branch="master"
       remote="altera" />
 </manifest>
