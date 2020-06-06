@@ -16,7 +16,7 @@
 
   <default
       remote="poky"
-      revision="dunfell"
+      revision="refs/heads/master"
       sync-j="4" />
 
   <project name="poky" path="poky" remote="poky" />
