@@ -1,4 +1,10 @@
 <manifest>
+<!--
+      remote="poky"
+      revision="refs/heads/master"
+      sync-j="4" />
+
+-->
   <remote
       name="poky"
       fetch="https://git.yoctoproject.org/git" />
@@ -16,7 +22,7 @@
       revision="refs/heads/master"
       sync-j="4" />
 
-  <project name="poky" path="poky" revision="dunfell" dest-branch="dunfell" remote="poky" />
-  <project name="meta-openembedded" path="poky/meta-openembedded" revision="dunfell" remote="oe" />
-  <project name="meta-altera" path="poky/meta-altera" revision="master" remote="altera" />
+  <project name="poky" path="poky" revision="refs/heads/dunfell" dest-branch="dunfell" remote="poky" />
+  <project name="meta-openembedded" path="poky/meta-openembedded" revision="refs/heads/dunfell" dest-branch="dunfell" remote="oe" />
+  <project name="meta-altera" path="poky/meta-altera" dest-branch="master" remote="altera" />
 </manifest>
