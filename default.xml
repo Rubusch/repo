@@ -1,12 +1,12 @@
 <manifest>
 	<remote
 		name="origin"
-	 	fetch="https://github.com/openembedded/meta-openembedded" />
+	 	fetch="https://github.com/openembedded" />
 
 	<default
 	    remote="origin"
 	    revision="refs/heads/master"
 		sync-j="4" />
 
-	<project name="meta-openembedded" path=" meta-openembedded" remote="origin" />
+	<project name="meta-openembedded" path="meta-openembedded" remote="origin" />
 </manifest>
