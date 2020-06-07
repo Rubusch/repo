@@ -1,12 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+      sync-tags="true"
+-->
 <manifest>
-	<remote
-		name="origin"
-	 	fetch="https://github.com/openembedded" />
+  <remote
+      name="poky"
+      fetch="https://git.yoctoproject.org/git" />
+  <remote
+      name="oe"
+      fetch="https://github.com/openembedded" />
+  <remote
+      name="altera"
+      fetch="https://github.com/kraj" />
 
-	<default
-	    remote="origin"
-	    revision="refs/heads/master"
-		sync-j="4" />
+  <default
+      remote="poky"
+      revision="refs/heads/master"
+      sync-j="4" />
 
-	<project name="meta-openembedded" path="meta-openembedded" remote="origin" />
+  <project
+      name="poky"
+      path="poky"
+      revision="dunfell"
+      upstream="dunfell"
+      remote="poky" />
+  <project
+      name="meta-openembedded"
+      path="poky/meta-openembedded"
+      revision="dunfell"
+      upstream="dunfell"
+      remote="oe" />
+  <project
+      name="meta-altera"
+      path="poky/meta-altera"
+      remote="altera" />
 </manifest>
