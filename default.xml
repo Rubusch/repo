@@ -14,7 +14,7 @@
       fetch="https://github.com/kraj" />
   <remote
       name="lothars"
-      fetch="git@github.com:Rubusch" />
+      fetch="https://github.com/Rubusch" />
 
   <default
       remote="poky"
