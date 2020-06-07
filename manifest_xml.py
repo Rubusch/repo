@@ -164,8 +164,10 @@ class _XmlRemote(object):
     # and then replacing it with the original when we are done.
 
     if manifestUrl.find(':') != manifestUrl.find('/') - 1:
-      url = urllib.parse.urljoin('gopher://' + manifestUrl, url)
-      url = re.sub(r'^gopher://', '', url)
+      # quickfix: for concatination ission when fetch is something like git@github.com:<username>
+      if not manifestUrl.startswith('git@'):
+        url = urllib.parse.urljoin('gopher://' + manifestUrl, url)
+        url = re.sub(r'^gopher://', '', url)
     else:
       url = urllib.parse.urljoin(manifestUrl, url)
     return url
