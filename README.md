@@ -22,6 +22,16 @@ $ git push origin --tags
 ```
 
 
+## usage
+
+```
+$ repo init --manifest-url=git@github.com:Rubusch/repo.git --repo-url=git@github.com:Rubusch/repo.git --no-repo-verify
+$ repo sync
+
+$ repo info
+
+```
+
 
 ## example:
 
