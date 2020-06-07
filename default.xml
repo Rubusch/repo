@@ -12,6 +12,9 @@
   <remote
       name="altera"
       fetch="https://github.com/kraj" />
+  <remote
+      name="lothars"
+      fetch="" />
 
   <default
       remote="poky"
@@ -34,4 +37,10 @@
       name="meta-altera"
       path="poky/meta-altera"
       remote="altera" />
+  <project
+      name="meta-lothars-cyclone5"
+      path="poky/meta-lothars-cyclone5"
+      revision="dunfell"
+      upstream="dunfell"
+      remote="lothars" />
 </manifest>
