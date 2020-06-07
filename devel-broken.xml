@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+      sync-tags="true"
+-->
+<manifest>
+  <remote
+      name="lothars"
+      fetch="https://github.com/Rubusch" />
+
+  <default
+      remote="lothars"
+      revision="refs/heads/master"
+      sync-j="4" />
+
+  <project
+      name="meta-lothars-cyclone5"
+      path="meta-lothars-cyclone5"
+      revision="dunfell"
+      upstream="dunfell"
+      remote="lothars" />
+</manifest>
