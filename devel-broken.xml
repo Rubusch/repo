@@ -5,7 +5,7 @@
 <manifest>
   <remote
       name="lothars"
-      fetch="git@github.com:Rubusch/" />
+      fetch="git@github.com:Rubusch" />
 
   <default
       remote="lothars"
