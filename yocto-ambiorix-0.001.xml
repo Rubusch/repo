@@ -21,7 +21,7 @@
       fetch="https://github.com/kraj" />
   <remote
       name="lothars"
-      fetch="https://github.com/Rubusch" />
+      fetch="git@github.com:Rubusch" />
 
   <default
       remote="lothars"
@@ -47,7 +47,13 @@
   <project
       name="meta-lothars-cyclone5"
       path="poky/meta-lothars-cyclone5"
-      revision="dunfell"
+      revision="ambiorix/dunfell"
       remote="lothars" />
+  <project
+      name="linux-crypto-userspace"
+      path="src/application"
+      revision="master"
+      remote="lothars"
+      />
 
 </manifest>
