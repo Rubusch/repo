@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    project ambiorix
+
+    vision: use wireguard with chacha-algo implemented in programmable logic
+
+    first approach:
+    - platform: Altera DE0 Nano SoC Board / cyclone5 (alternative Terasic DE1 / cyclone5)
+    - application using libkcapi to test linux usercpase crypto api
+    - yocto setup: bsp
+-->
+<manifest>
+  <remote
+      name="poky"
+      fetch="https://git.yoctoproject.org/git" />
+  <remote
+      name="oe"
+      fetch="https://github.com/openembedded" />
+  <remote
+      name="altera"
+      fetch="https://github.com/kraj" />
+  <remote
+      name="lothars"
+      fetch="https://github.com/Rubusch" />
+
+  <default
+      remote="lothars"
+      revision="refs/heads/master"
+      sync-j="4" />
+
+  <project
+      name="poky"
+      path="poky"
+      revision="dunfell"
+      remote="poky" />
+  <project
+      name="meta-openembedded"
+      path="poky/meta-openembedded"
+      revision="dunfell"
+      remote="oe" />
+  <project
+      name="meta-altera"
+      path="poky/meta-altera"
+      revision="lothar/dunfell"
+      remote="lothars" />
+<!--      remote="altera" /> -->
+  <project
+      name="meta-lothars-cyclone5"
+      path="poky/meta-lothars-cyclone5"
+      revision="dunfell"
+      remote="lothars" />
+
+</manifest>
