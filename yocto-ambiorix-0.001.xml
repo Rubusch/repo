@@ -46,7 +46,7 @@
 <!--      remote="altera" /> -->
   <project
       name="meta-lothars-cyclone5"
-      path="poky/meta-lothars-cyclone5"
+      path="."
       revision="ambiorix/dunfell"
       remote="lothars" />
   <project
